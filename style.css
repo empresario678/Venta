@@ -1,11 +1,30 @@
 body{
 
+   .chocolate {
+     width: 50%;
+     height: auto;
+   }
    
-  .pulsera{
-    max-width: 100%;
-    height: auto;
-    display: block;
+  .aritos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
+  
+  .aritos img{
+    width: calc(50% - 5px) ;
+  }
+  
+  .pulsera {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .pulsera img {
+    width: calc(50% - 5px);
+  }
+  
 .div {
     background-color: black;
     width: 100%;
@@ -14,7 +33,8 @@ body{
 
 nav {
     display: flex;
-    justify-content: center;
+    overflow-x: auto;
+white-space: nowrap;
     gap: 15px;
 }
 
@@ -24,7 +44,7 @@ nav a {
     padding: 10px 20px;
     border: 1px solid white;
     border-radius: 5px;
-    display: inline-block;
+    flex: 0 0 auto;
 }
 
 nav a:hover {
